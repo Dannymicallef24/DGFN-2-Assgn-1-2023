@@ -8,7 +8,7 @@
 # I used Python Libraries (https://docs.python.org/3/search.html?q=module) to learn about modules.
 # I asked chat gpt "How to make and use a menu in python?" on October 10th.
 # I asked chat gpt "How to use modules and functions together in python?" on October 12th.
-# I asked chat gpt "How to have the answers from equations rounded to one decimal place?" on October 12th.
+# I asked chat gpt "How to have the answers from equations rounded to one decimal place?" on October 10th.
 
 import math
 
