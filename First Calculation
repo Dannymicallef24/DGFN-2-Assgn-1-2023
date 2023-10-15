@@ -1,0 +1,16 @@
+This is the first calculation of my pytest code. 
+I have imported the neccesary module that I needed to do the calculations as well as used numbers to test the calculations with.
+This will test my area of a rectangle calculations in my main code with these numbers. 
+If the numbers come out different in my main code, then they will fail and if they are the same then they will pass.
+I used Python Libraries (https://docs.python.org/3/search.html?q=module) to learn about modules.
+
+import pytest
+import math
+from A_V_calc_DWM import (
+    calculate_area_of_rectangle,
+)
+
+# Test cases for calculate_area_of_rectangle function
+def test_calculate_area_of_rectangle():
+    assert calculate_area_of_rectangle(3, 4) == 12
+    assert calculate_area_of_rectangle(5, 5) == 25
