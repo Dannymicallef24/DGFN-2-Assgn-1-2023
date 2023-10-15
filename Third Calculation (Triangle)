@@ -1,0 +1,25 @@
+This is my third calculation which is to calculate the area of a triangle.
+This will test my calculations in my main code with a couple pairs of diffent numbers to see if the calculation is correct.
+
+import pytest
+import math
+from A_V_calc_DWM import (
+    calculate_area_of_rectangle,
+    calculate_volume_of_sphere,
+    calculate_area_of_triangle,
+)
+
+# Test cases for calculate_area_of_rectangle function
+def test_calculate_area_of_rectangle():
+    assert calculate_area_of_rectangle(3, 4) == 12
+    assert calculate_area_of_rectangle(5, 5) == 25
+
+# Test cases for calculate_volume_of_sphere function
+def test_calculate_volume_of_sphere():
+    assert calculate_volume_of_sphere(2) == 33.510321638291124
+    assert calculate_volume_of_sphere(3) == 113.09733552923254
+
+# Test cases for calculate_area_of_triangle function
+def test_calculate_area_of_triangle():
+    assert (calculate_area_of_triangle(4, 6) == 12.0)
+    assert (calculate_area_of_triangle(5, 8) == 20.0)
