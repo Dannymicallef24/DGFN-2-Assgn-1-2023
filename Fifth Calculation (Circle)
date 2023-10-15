@@ -1,0 +1,37 @@
+This is my fifth and final calculation test.
+This tests the area of a circle.
+
+import pytest
+import math
+from A_V_calc_DWM import (
+    calculate_area_of_rectangle,
+    calculate_volume_of_sphere,
+    calculate_area_of_triangle,
+    calculate_volume_of_cylinder,
+    calculate_area_of_circle,
+)
+
+# Test cases for calculate_area_of_rectangle function
+def test_calculate_area_of_rectangle():
+    assert calculate_area_of_rectangle(3, 4) == 12
+    assert calculate_area_of_rectangle(5, 5) == 25
+
+# Test cases for calculate_volume_of_sphere function
+def test_calculate_volume_of_sphere():
+    assert calculate_volume_of_sphere(2) == 33.510321638291124
+    assert calculate_volume_of_sphere(3) == 113.09733552923254
+
+# Test cases for calculate_area_of_triangle function
+def test_calculate_area_of_triangle():
+    assert (calculate_area_of_triangle(4, 6) == 12.0)
+    assert (calculate_area_of_triangle(5, 8) == 20.0)
+
+# Test cases for calculate_volume_of_cylinder function
+def test_calculate_volume_of_cylinder():
+    assert calculate_volume_of_cylinder(2, 4) == 50.26548245743669
+    assert calculate_volume_of_cylinder(3, 5) == 141.3716694115407
+    
+# Test cases for calculate_area_of_circle function
+def test_calculate_area_of_circle():
+    assert calculate_area_of_circle(2) == 12.566370614359172
+    assert calculate_area_of_circle(4) == 50.26548245743669
